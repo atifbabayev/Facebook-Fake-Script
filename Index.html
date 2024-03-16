@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Fake Script</title>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="Login-page">
+      <div class="Slogan-container">
+        <h1>facebook</h1>
+        <h2>Connect with friends and the world around you on Facebook.</h2>
+      </div>
+      <div class="Login-container">
+        <form action="">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email or phone number"
+            autofocus="1"
+            aria-label="Email or phone number"
+          />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+            aria-label="Password"
+          />
+          <button type="button">Log In</button>
+          <a
+            href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+            >Forgot password?</a
+          >
+        </form>
+        <br />
+        <div class="Create-new-account">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+            Create new account
+          </button>
+        </div>
+        <div class="black">
+          <a
+            href="https://www.facebook.com/pages/create/?ref_type=registration_form"
+            >Create a Page</a
+          >
+          <p>for a celebrity, brand or business.</p>
+        </div>
+      </div>
+    </div>
+    <div id="id01" class="modal">
+      <div class="signup-page">
+      <div class="signup-container">
+        <div class="signup-header">
+      <h2>Sign Up</h2>
+      <h5>It’s quick and easy.</h5>
+    </div>
+    <div class="cancelimage">
+      <img onclick="document.getElementById('id01').style.display='none'"src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png" alt="" width="24" height="24">
+    </div>
+  </div>
+      <form class="modal-form" method="post">
+        <div class="container">
+          <input class="text1"
+            type="text"
+            placeholder="First name"
+            name="name"
+            required
+          />
+          <input class="text1"
+            type="text"
+            placeholder="Last name"
+            name="name"
+            required
+          />
+          <input class="text2"
+            type="text"
+            placeholder="Mobile number or email"
+            name="name"
+            required
+          />
+
+          <input class="text2"
+            type="password"
+            placeholder="New password"
+            name="psw"
+            required
+          />
+          <select name="day" id="date">
+            <option value="day">10</option>        
+          </select>
+          <select name="month" id="date">
+            <option value="month">03</option>
+          </select><select name="year" id="date">
+            <option value="year">2001</option>
+          </select>
+          <span
+            class="Gender"              
+            ><span class="Borderstyle"
+              ><label >Female</label
+              ><input
+                type="radio" name="gender" /></span
+            ><span class="Borderstyle"
+              ><label>Male</label
+              ><input
+                type="radio" name="gender"/></span
+            ><span class="Borderstyle"
+              ><label>Custom</label
+              ><input
+                type="radio" name="gender"/></span
+          ></span>
+          <div class="signupbtn">
+          <button type="submit" >Sign Up</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
